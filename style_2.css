@@ -1,0 +1,57 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  max-width: 960px;
+  min-width: 480px;
+  margin: 10px auto;
+  
+}
+h1,h2,p{
+  margin: 0px;
+}
+/*设置为0是因为在比如chrome浏览器里面，写标题或者设置display值时，会产生默认的margin，打乱自己的布局*/
+
+header{
+  display: block;
+  background-color: gray;
+  padding: 30px;
+  color: white;
+}
+
+.th{
+  width: 20%;
+  height: 150px;
+  line-height: 150px;
+  border-bottom: 1px solid gray;
+  text-align: center;
+  background-color: gainsboro;
+  float: left;
+}
+
+
+
+.td{
+  
+  width:80%;
+  height: 150px;
+  float: left;
+  border-bottom: 1px solid gray;
+  
+}
+
+
+.td p{
+  display: inline-block; 
+  margin: 5px 20px 0px 10px;
+  
+}
+
+.td p :first-child{
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+
+
+
