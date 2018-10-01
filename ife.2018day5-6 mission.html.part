@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>resume</title>
+    <link rel="stylesheet" href="style_2.css">
+    
+  </head>
+  <body>
+    <header>
+      <h1>简历</h1>
+    </header>
+    
+    <div id="table">
+    <div class="th">
+      <h2 >基本信息</h2>
+    </div>
+    <div class="td">
+      <p><span>姓名</span><span>张三</span></p>
+      <p><span>性别</span><span>男</span></p>
+      <p><span>应聘职位</span> <span>Web前端工程师</span></p>
+    </div>
+    
+    <div class="th">
+      <h2>联系方式</h2>
+    </div>
+    <div class="td">
+      <p>
+        <span>手机</span> <span>12345678123</span></p>
+      <p><span>Email</span> <span><a href="">joinfe@baidu.com</a></span>
+      </p>
+      <p>
+        <span>个人主页</span> <span><a href="">Github</a></span>
+      </p>
+    </div>
+      
+      <div class="th">
+        <h2>能力描述</h2>
+      </div>
+      <div class="td">
+        <p>
+          <span>技术能力</span> <span>熟练掌握HTML,CSS,JavaScript</span>
+        </p>
+        <p>
+          <span>综合能力</span> <span>良好的沟通，主动积极，努力勤奋主动积极，努力勤奋主动积极，努力勤奋主动积极，努力勤奋</span>
+        </p>
+      </div>
+      
+      <div class="th">
+        <h2>教育经历</h2>
+      </div>
+      <div class="td">
+        <p>
+          <span>本科</span> 
+          <span>IFE</span>
+        </p>
+        <p>
+          <span>研究生</span> 、<span>IFE</span>
+        </p>
+      </div>
+      
+      <div class="th">
+        <h2>项目经历</h2>
+      </div>
+      <div class="td">
+        <p>
+          <span>xdxd</span> 
+          <span>作为前端工程师参与了xxxx</span>
+        </p>
+        <p>
+          <span>sanfasf</span> <span>作为fsdafsadfasdfasdfa</span>
+        </p>
+      </div>
+      
+      
+    </div>
+  </body>
+</html>
