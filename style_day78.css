@@ -1,0 +1,125 @@
+*{
+	box-sizing: border-box;
+}
+.middle{
+	max-width: 960px;
+	min-width: 480px;
+	margin: 0 auto;
+}
+h1,p{
+	margin: 0;
+	color: white;
+} 
+/*以上是整体的*/
+
+/*header*/
+header{
+	background-color: gray;
+	padding: 20px;
+	margin: 0px;
+}
+#head{
+	position: relative;
+}
+#nav1{
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+/*banner*/
+#banner{
+	background-color: lightgreen;
+	height: 200px;
+	margin:0px;
+}
+#banner #outturn{
+	position: relative;
+	height: 200px;
+}
+#turn{
+	display: inline-block;
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+}
+#turn p{
+   display: inline-block;
+   border: 1px solid black;
+   width: 30px;
+   text-align: center;
+   padding: 5px;
+   background-color: rgba(1,1,1,0.5);
+}
+#turn p:nth-of-type(2){
+	padding: 15px 5px 5px 5px;
+}
+
+
+/*第二个导航栏*/
+#outnav2{
+	border-bottom: 1px dotted;
+	margin: 20px 0px 10px;
+}
+#outnav2 div{
+	display: flex;
+	flex-flow: row wrap;
+	
+
+}
+#nav2 p{
+	border: 1px solid;
+	border-bottom: none;
+	border-top-right-radius: 15px;
+	border-top-left-radius: 15px;
+	background-color: gray;
+	padding: 10px;
+	color: black;
+	position: relative;
+	bottom: -1px;/*覆盖outnav2部分地步1px的border宽*/
+	left: 0;
+	z-index: 1;
+}
+#nav2 p:first-child{
+	background-color: white;
+}
+
+
+/*主体部分*/
+#main{
+	display: flex;
+	flex-flow: row wrap;
+}
+#main #four_a{
+	display: flex;
+}
+article{
+	padding: 80px;
+	border: 1px solid;
+	text-align: center;
+	margin: 0px 5px 5px 0px;
+	flex: 1;
+}
+
+/*页脚*/
+footer{
+	background-color: gray;
+	padding: 20px;
+	margin-top: 10px;
+}
+footer p{
+	color: black;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
