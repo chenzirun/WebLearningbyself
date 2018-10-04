@@ -1,0 +1,437 @@
+*{
+	box-sizing: border-box;
+}
+body,html{
+	margin: 0;
+	font-family: Arial, Helvetica, sans-serif;
+  	font-size: 16px;
+}
+h1,h2,h3,p{
+	margin: 0px;
+	font-family: courier;Helvetica, sans-serif; 
+	font-weight: normal;
+}
+
+#page1{
+	width: 1600px;
+	height: 990px;
+	margin: 0 auto;
+	background-image: url(images/page1.png);
+	background-repeat: no-repeat;
+	position: relative;
+	z-index: 0;
+}
+#page1::after{
+  content: '';
+  display: block;
+  position: absolute;;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(20, 20, 20, 0.6);
+  z-index: -1;
+}
+#s1{
+	color: white;
+	width: 900px;
+	margin: 0 auto;
+	text-align: center;
+	overflow: auto;
+}
+#s1part1{ 
+	margin: 150px 50px 100px 50px;
+	padding: 20px;
+}
+#s1part1 h1{
+	font-size: 3.5em;
+	margin-bottom: 80px;
+	font-weight: lighter;
+
+}
+#s1part1 p{
+	line-height: 1.6em;
+	opacity: 0.5;
+	margin: 0 30px;
+}
+#s1part2{
+    width: 900px;
+	margin: 100px auto;
+	text-align: center;
+	border: 1px solid rgba(255, 255, 255, 0.2);
+}
+#s1part2 form{
+	margin-bottom: 40px;
+}
+#s1part2 form h3{
+	margin: 40px 0 10px 0;
+	letter-spacing: 2px;
+}
+#s1part2 form p{
+	margin: 10px 0 40px 0;
+	font-size: 0.6em;
+	opacity: 0.5;
+}
+#s1part2 form >input{
+ 	width: 292px;
+  	height: 50px;
+  	border: solid 1px rgba(255, 255, 255, 0.2);
+  	background: inherit;
+  	padding-left: 22px;
+  	font-size: 14px;
+  	line-height: 26px;
+  	color: #fff;
+  	margin-right: 30px;
+}
+#s1part2 form> input[type="submit"]{
+	outline: none;
+	width: 125px;
+	height: 50px;
+    background-color: #ffffff;
+  	border: 1px solid #fff;
+	border-radius: 2px;
+	padding: 2px;
+	color: black;
+}
+
+/*第二个页面*/
+#page2{
+	width: 1600px;
+	height: 710px;
+	margin: 0 auto;
+}
+#page2 >p{
+	text-align: center;
+	padding: 100px 0 30px;
+	margin: 0 auto 20px;
+}
+#page2 >h1{
+	text-align: center;
+	width: 800px;
+	margin: 0 auto 40px;
+	font-size: 3em;
+}
+#p2part1 ,#p2part2{
+	display: flex;
+	font-size: 1.2em;
+	height: 150px;
+	margin-top: 40px;
+}
+#p2part1 article{
+	flex: 1;
+	overflow: hidden;
+	margin: 0 100px 0 150px;
+}
+#p2part2 article{
+	flex: 1;
+	overflow: hidden;
+	margin: 0 100px 0 150px;
+}
+#page2 article img{
+	float: left;
+	margin: 0 30px 120px;
+}
+#page2 article h2{
+	margin-bottom: 20px;
+}
+#page2 article p{
+	opacity: 0.5;
+	line-height: 1.3em;
+}
+
+/*page3*/
+#page3{
+	width: 1600px;
+	height: 800px;
+	margin: 0 auto;
+	background-image: url(images/page3.png);
+	overflow: hidden;
+	position: relative;
+	z-index: 0;
+}
+#page3::after{
+  content: '';
+  display: block;
+  position: absolute;;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(20, 20, 20,0.6);
+  z-index: -1;
+}
+#page3 >img{
+	float: right;
+	margin: 120px 0 0;
+}
+#p3part1{
+	width: 620px;
+	height: 530px;
+	position: absolute;
+	left: 305px;
+	top: 190px;
+	color: white;
+}
+#p3part1> h1{
+	font-size: 3em;
+	width: 430px;
+	font-weight: lighter;
+}
+#p3part1> p{
+	width: 430px;
+	font-size: 1.5em;
+	line-height: 1.3em;
+	margin-top: 30px;
+	opacity: 0.5;
+}
+
+#p3part1 button{
+	width: 240px;
+	height: 60px;
+	background-color: #ffffff;
+	margin: 40px 30px 0 0;
+	border-radius: 3px;
+}
+
+/*page4*/
+#page4{
+	width: 1600px;
+	height: 580px;
+	margin: 0 auto;
+	padding: 100px 330px 80px;
+	border-bottom: 1px solid gray;
+}
+#page4 h1{
+	font-size: 3em;
+	text-align: center;
+	margin: 30px 0 80px;
+}
+#p4part1{
+	display: flex;
+	width: 1000px;
+	height: 230px;
+	align-items: center;
+	justify-content: space-around;
+	text-align: center;
+	margin: 0 auto;
+}
+#p4part1 article{
+	width: 250px;
+}
+#p4part1 article img{
+	margin-bottom: 40px; 
+}
+#p4part1 article p{
+	opacity: 0.5;
+	line-height: 1.4em;
+}
+
+/*page5*/
+#page5{
+	width: 1600px;
+	height: 1000px;
+	margin: 0 auto;
+	border-bottom: 1px solid gray;
+	padding-top: 15px;
+}
+#p5a1, #p5a2{
+	overflow: hidden;
+ 	width: 990px;
+ 	margin: 100px auto ;
+}
+#p5a1 img{
+	float: left;
+	margin-right: 100px;
+}
+#p5a2 img{
+	float: right;
+	margin-left: 100px;
+}
+#p5a1 p, #p5a2 p{
+	margin-top: 50px;
+	line-height: 1.4em;
+	color: gray;
+}
+#p5a1 h2, #p5a2 h2{
+	margin-top: 70px;
+	word-spacing: 1.2px;
+	letter-spacing: 0.8;
+}
+
+
+/*page6*/
+#page6{
+	width: 1600px;
+	height: 1084px;
+	margin: 0 auto;
+	border-bottom: 1px solid gray;
+	text-align: center;
+	position: relative;
+}
+#page6 h1{
+	font-size: 3em;
+	padding-top: 70px;
+}
+#page6 > p{
+	padding: 0 400px;
+	margin-top: 40px;
+	margin-bottom: 50px;
+}
+#page6 #photos{
+	width: 1000px;
+	margin: 0 auto;
+	display: flex;
+	flex-flow: row wrap;
+}
+#page6 #photos img{
+	margin: 15px;
+	
+}
+#fugai{
+	width: 1000px;
+	margin: 0 auto;
+	display: flex;
+	flex-flow: row wrap;
+	position: absolute;
+	top: 251px;
+	left: 300px;
+}
+#touch{
+	width: 470px;
+	height: 340px;
+	color: white;
+	margin: 15px;
+	text-align: center;
+	display: inline-block;
+	background-color: rgba(20, 20, 20,0.6);
+}
+
+#touch h3{
+	margin: 100px 0 20px;
+	font-size: 1.3em;
+}
+#touch p{
+	margin-bottom: 40px;
+	font-size: 1.3em;
+	opacity: 0.6;
+}
+#touch img{
+	margin-right: 20px;
+}
+#touch{
+	opacity: 0;
+}
+#touch:hover{
+	opacity: 1;
+}
+
+/*page7*/
+#page7{
+	width: 1600px;
+	height: 700px;
+	margin: 0 auto;
+	border-bottom: 1px solid gray;
+}
+#page7 form{
+	overflow: hidden;
+	padding: 80px 300px 0;
+}
+#page7 fieldset{
+	width: 400px;
+	height: 550px;
+	float: left;
+	text-align: center;
+	margin: 20px 100px 0 0;
+}
+#page7 fieldset input{
+	width: 290px;
+	height: 50px;
+	margin: 20px 0;
+	padding-left: 20px;
+	outline: none;
+}
+#page7 fieldset textarea{
+	width: 290px ;
+	height: 200px;
+	margin-top: 20px;
+	padding-left: 20px;
+	outline: none;
+	resize: none;
+}
+#page7 fieldset button{
+	width: 290px;
+	height: 50px;
+	margin-top: 20px;
+	color: white;
+	background-color: black;
+	border-radius: 3px;
+}
+
+#page7 div{
+	padding-top: 130px;
+	padding-right: 60px;
+}
+#page7 div h1{
+	font-size: 3em; 
+	margin-bottom: 50px;
+}
+#page7 div> p{
+
+	margin-bottom: 50px;
+	opacity: 0.5;
+}
+#p7part1 section{
+	margin-bottom: 25px;
+}
+#p7part1 section p{
+	display: inline-block;
+	width: 300px;
+	margin-left: 15px;
+}
+
+/*page8*/
+#page8{
+	width: 1600px;
+	height: 420px;
+	margin: 0 auto;
+	border-bottom: 1px solid gray;
+	background-color: black;
+	color: white;
+	display: flex;
+	padding: 100px 200px 150px;
+	justify-content: space-between;
+	align-items: top;
+}
+#page8 section{
+	flex: 1;
+	line-height: 3em;
+}
+#page8 section:nth-of-type(4) p{
+	line-height: 1em;
+	margin-top: 30px;
+	width: 280px;
+}
+#page8 section:nth-of-type(4) p:nth-of-type(2){
+	word-spacing: 20px;
+}
+#page8 section p{
+	opacity: 0.5;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
