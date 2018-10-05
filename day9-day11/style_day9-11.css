@@ -5,6 +5,8 @@ body,html{
 	margin: 0;
 	font-family: Arial, Helvetica, sans-serif;
   	font-size: 16px;
+	weight:100%;
+	height:100%;
 }
 h1,h2,h3,p{
 	margin: 0px;
@@ -13,9 +15,9 @@ h1,h2,h3,p{
 }
 
 #page1{
-	width: 1600px;
+	min-width: 1600px;/*很重要,页面最小宽为1600px，小于1600时；固定住页面*/
 	height: 990px;
-	margin: 0 auto;
+	background-size: cover;/*很重要,页面最小宽为1600px，大于1600时；整体缩放*/
 	background-image: url(images/page1.png);
 	background-repeat: no-repeat;
 	position: relative;
@@ -141,9 +143,9 @@ h1,h2,h3,p{
 
 /*page3*/
 #page3{
-	width: 1600px;
+	min-width: 1600px;
 	height: 800px;
-	margin: 0 auto;
+	background-size: cover;
 	background-image: url(images/page3.png);
 	overflow: hidden;
 	position: relative;
@@ -391,9 +393,8 @@ h1,h2,h3,p{
 
 /*page8*/
 #page8{
-	width: 1600px;
+	min-width: 1600px;
 	height: 420px;
-	margin: 0 auto;
 	border-bottom: 1px solid gray;
 	background-color: black;
 	color: white;
