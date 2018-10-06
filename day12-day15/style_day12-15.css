@@ -1,0 +1,231 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html,body{
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+/* 左侧边第一栏 */
+#nav1{
+  width: 100px;
+  height: 100%;
+  background-color: #1d2531;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow: auto;
+}
+#s1{
+  margin-top: 20px;
+}
+#s1 ul li{
+  list-style: none;
+  margin-bottom: 20px;
+}
+#s1 ul{
+  text-align: center;
+}
+#s2{
+  position: absolute;
+  bottom: 10px;
+  padding-left: 25px;
+}
+#s2 img{
+  margin-right: 10px;
+}
+
+/* 左侧边第二栏 */
+#nav2{
+  width: 250px;
+  height: 100%;
+  background: rgb(34, 44, 59);
+  position: fixed;
+  overflow: hidden;
+  left: 100px;
+  top: 0;
+  color: white;
+}
+#nav2body{
+  margin: 40px 20px;
+  width: 210px;
+}
+#nav2 section{
+  border-bottom: 1px solid gray;
+  margin-top: 20px;
+  padding-bottom: 20px;
+  line-height: 2em;
+  position: relative;
+}
+#nav2 section p:first-child{
+  font-size: 0.8em;
+  opacity: 0.7;
+}
+#nav2 section p img{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+#nav2 section p{
+  font-weight: bold;
+}
+#nav2 section p:nth-of-type(2)::after{
+  content: '54';
+  display: inline-block;
+  font-size: 12px;
+  height: 20px;
+  line-height: 20px;width: 30px;
+  float: right;
+  background: rgb(49,159,241);
+  border: 1px solid white;
+  border-radius: 25px;
+  margin-top: 5px;
+  text-align: center;
+}
+#nav2 #footer{
+  position: absolute;
+  bottom: 0;
+  padding-left:20px;
+}
+
+
+
+
+
+/* 整个主体 */
+#main{
+  margin-left: 350px;
+  overflow: hidden;
+}
+
+/* 主题页面top栏 */
+#maintop{
+  height: 80px;
+  border: 1px solid gray;
+}
+#maintop > h1{
+  display:inline-block;
+  padding: 15px;
+}
+#maintop p{
+  display: inline-block;
+  width: 200px;
+  position: fixed;
+  top: 0;
+  right: 20px;
+  margin-top: 15px;
+}
+#maintop p img:first-child{
+    float: left;
+    margin-right:  20px;
+}
+#maintop p img:last-child{
+    float: right;
+}
+
+/* 主体部分的左边栏 */
+#messagebook{
+  width: 330px;
+  height: 1100px;
+  float: left;
+  display: flex;
+  flex-flow: column;
+  overflow: scroll;
+}
+#messagebook form{
+  border-bottom: 1px solid gray;
+  height:50px;
+  text-align: center;
+  line-height: 50px;
+}
+#messagebook input{
+  width: 270px;
+  height: 30px;
+  background: lightblue;
+  border: 1px solid black;
+  border-radius: 3px;
+}
+.friendwindow{
+  border-bottom: 1px solid gray;
+  display: flex;
+  flex-flow: column;
+  padding: 10px;
+  position: relative;
+}
+.friendwindow p{
+  margin: 10px 10px 0;
+  color: gray;
+}
+.friendwindow p img{
+  float: left;
+  margin-right: 15px;
+}
+.friendwindow p span{
+  color: black;
+}
+.timemark{
+  position: absolute;
+  right: 10px;
+  top: 20px;
+  opacity: 0.6;
+}
+
+/* 主体部分的右边栏 */
+#chatpart{
+  height: 1100px;
+  overflow: scroll;
+  border-left: 1px solid gray;
+}
+/* 第一行菜单部分 */
+#chatpart #chatmeun{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  border-bottom: 1px solid gray;
+}
+#chatpart #chatmeun p img{
+  margin-right: 15px;
+}
+/* 下面跟着主体部分 */
+.chatwindow{
+  border-bottom:1px solid gray;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.chatwindow div{
+  margin: 20px 20px 0;
+  display: flex;
+  justify-content: space-between;
+}
+.chatwindow div p{
+  padding: 10px;
+  color: gray;
+}
+.chatwindow div p span{
+  display: inline-block;
+  margin-bottom: 10px;
+  color: black;
+  font-weight: bold;
+}
+.chatwindow section{
+  margin: 20px auto;
+}
+.chatwindow section button,textarea{
+  float: left;
+}
+.chatwindow section button{
+  width: 40px;
+  height: 40px;
+  border: 1px solid gray;
+  background: rgba(243, 243, 243, 0.8);
+}
+.chatwindow section textarea{
+  width: 90%;
+  height: 40px;
+}
