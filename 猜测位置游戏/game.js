@@ -73,6 +73,7 @@ var model = {
     generateShip: function{
         var direction = Math.floor(Math.random() * 2);
         var row, col;
+        
         if (direction === 1) {
             //生成水平方向的战舰
             row = Math.floor(Math.random() * this.boardsize);
