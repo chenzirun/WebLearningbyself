@@ -75,12 +75,12 @@ var model = {
         var row, col;
         
         if (direction === 1) {
-            //生成水平方向的战舰
+           
             row = Math.floor(Math.random() * this.boardsize);
             col = Math.floor(Math.random() * (this.boardsize - this.shipLength + 1));
         }
         else {
-            //生成垂直方向的战舰
+          
             row = Math.floor(Math.random() * (this.boardsize - this.shipLength + 1));
             col = Math.floor(Math.random() * this.boardsize);
         }
@@ -154,7 +154,7 @@ return null;
 
 
 
-// 获取玩家猜测 并且 对猜测进行处理
+// 获取玩家猜测并且对猜测进行处理
 window.onload = init;
 function init() {
     var fireButton = document.getElementById("fireButton");
